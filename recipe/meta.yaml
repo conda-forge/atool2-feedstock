@@ -24,12 +24,13 @@ requirements:
   build:
     - automake
     - make
-    - perl >=5.8.8
+    - perl >=5.004
   run:
-    - perl >=5.8.8
+    - perl >=5.004
 
 test:
   commands:
+    - "cat $(which atool)"
     - atool --help
     - aunpack --help
     - apack --help
